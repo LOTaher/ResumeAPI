@@ -34,4 +34,3 @@ func GetSkills(db *sql.DB) func(c *fiber.Ctx) error {
 		return c.JSON(skills)
 	}
 }
-
