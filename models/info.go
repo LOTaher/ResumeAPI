@@ -1,6 +1,7 @@
 package models
 
 type Info struct {
+	ID int `json:"ID"`
 	Name string `json:"Name"`
 	Email string `json:"Email"`
 	Phone string `json:"Phone"`
