@@ -23,7 +23,6 @@ func main() {
 
 	app := fiber.New()
 
-	// Optional: Add logging middleware
 	app.Use(logger.New())
 
 	// Setup routes from routes.go

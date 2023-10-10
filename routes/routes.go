@@ -9,6 +9,10 @@ import (
 
 func SetupRoutes(app *fiber.App, db *sql.DB) {
 
+	app.Get("/api", func(c *fiber.Ctx) error {
+		return c.SendString("Welcome to my Resume API! 👋")
+	})
+
 	app.Get("/api/info", handlers.GetInfo(db))
 	app.Get("/api/education", handlers.GetEducation(db))
 	app.Get("/api/projects", handlers.GetProjects(db))
